@@ -325,6 +325,25 @@ form select {
   padding-right: 1rem;
 }
 
+.create-task-btn {
+  background-color: #635fc7;
+  color: white;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  width: 100%;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+  align-items: center;
+}
+.create-task-btn:hover {
+  background-color: #7264e0;
+}
+
+
 /* ========================
    Responsive Styles
 ======================== */
