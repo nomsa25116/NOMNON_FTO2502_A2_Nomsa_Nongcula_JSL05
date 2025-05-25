@@ -95,3 +95,23 @@ function initTaskBoard() {
 
 // Wait until DOM is fully loaded
 document.addEventListener("DOMContentLoaded", initTaskBoard);
+
+
+
+// This file handles task creation, rendering, and storage using localStorage and modular DOM updates.
+
+const addTaskBtn = document.getElementById("addTaskBtn");
+const taskModal = document.getElementById("task-modal");
+const closeModal = document.getElementById("close-modal-btn");
+const form = document.getElementById("task-form");
+const createTaskBtn = document.getElementById("createTaskBtn");
+
+/** Event listeners for task creation and modal interactions */
+addTaskBtn.addEventListener("click", () => {
+  taskModal.showModal();
+});
+
+closeModal.addEventListener("click", () => {
+  taskModal.close();
+});
+
