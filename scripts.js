@@ -130,3 +130,4 @@ function getStoredTasks() {
 function saveTasksToStorage(tasks) {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
+
