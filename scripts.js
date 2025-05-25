@@ -115,3 +115,10 @@ closeModal.addEventListener("click", () => {
   taskModal.close();
 });
 
+/**
+ * Retrieves tasks from localStorage or returns an empty array if none exist.
+ * @returns {Array<Object>} Array of task objects.
+ */
+function getStoredTasks() {
+  return JSON.parse(localStorage.getItem("tasks")) || [];
+}
