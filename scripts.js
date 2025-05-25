@@ -122,3 +122,11 @@ closeModal.addEventListener("click", () => {
 function getStoredTasks() {
   return JSON.parse(localStorage.getItem("tasks")) || [];
 }
+
+/**
+ * Saves the provided task array to localStorage.
+ * @param {Array<Object>} tasks - The task list to save.
+ */
+function saveTasksToStorage(tasks) {
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
